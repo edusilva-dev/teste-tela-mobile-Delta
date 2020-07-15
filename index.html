@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Teste Tela Mobile | Grupo Delta</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="maps" class="maps"></div>
+
+        <div class="search">
+
+            <div class="search-input flex-column">
+                <input type="text" name="address" id="address" class="address black-pearl" placeholder="Rua Olinda, 140">
+                <i class="fa fa-bullseye fa-2x bullseye-icon black-pearl" aria-hidden="true"></i>
+            </div>
+
+            <div class="infos flex-column">
+                <h2 class="black-pearl">Confirme o seu local</h2>
+                <p>Ajude o seu prestador a localizá-lo mais
+                     rapidamente, ajuste sua licalização acima!</p>
+                <input type="button" id="send" class="btn-confirm" value="CONFIRMAR O LOCAL DA OCORRÊNCIA &rarr;">
+            </div>
+
+        </div>
+
+        <div id="hide" class="hide">
+            <div id="infos" class="auto-info">
+                <img src="https://via.placeholder.com/45x45" alt="Logo da marca do veículo">
+                <div class="auto-board">
+                    <span class="medium cinza">PLACA</span>
+                    <h2 class="black-pearl bold placa">IXS-8269</h2>
+                </div>
+                <div class="protocol">
+                    <span class="medium cinza">PROTOCOLO</span>
+                    <h2 class="black-pearl bold protocolo">1457845856894</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC8F4Qkbn2_F0RDhd1Inhzx5w_PXwbkYg&callback=initMap" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="js/geocoder.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

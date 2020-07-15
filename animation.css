@@ -1,0 +1,12 @@
+.search-animated{
+    transition: all .2s ease-out;
+    margin-top: -65px;
+    height: 30%;
+    position: absolute;
+}
+
+.auto-info-animated{
+    margin-top: 60%;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
